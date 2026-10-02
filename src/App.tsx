@@ -30,6 +30,8 @@ const router = createBrowserRouter([
       { path: '*', element: <NotFoundPage /> },
     ],
   },
-])
+], {
+  basename: '/symbiosis/',
+})
 
 export const App = () => <RouterProvider router={router} />
